@@ -1,0 +1,21 @@
+{
+  "name": "bookdoc",
+  "version": "1.0.0",
+  "description": "test bookdoc website",
+  "main": "config.js",
+  "dependencies": {
+    "jasmine-data-provider": "^2.2.0",
+    "moment": "^2.24.0",
+    "protractor": "^5.4.2",
+    "protractor-jasmine2-html-reporter": "^0.0.7",
+    "typescript": "^3.5.1"
+  },
+  "scripts": {
+    "update": "./node_modules/.bin/webdriver-manager update",
+    "start": "./node_modules/.bin/webdriver-manager start",
+    "protractor": "./node_modules/.bin/protractor config.js",
+    "all": "npm run update && npm run start && npm run protractor"
+  },
+  "author": "jean",
+  "license": "ISC"
+}
